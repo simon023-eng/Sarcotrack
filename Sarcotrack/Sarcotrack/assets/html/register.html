@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SARCO-TRACK | Registro de Usuarios</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>SARCO-TRACK</h1>
+    <p>Registro de usuarios para pruebas de fuerza</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Registrar Usuario</h2>
+      <form id="userForm">
+
+        <label for="document_type">Tipo de documento: </label>
+        <select name="dt" id="dt" required>
+            <option value="">Seleccione</option>
+            <option value="cedula">Cédula</option>
+            <option value="visa">Visa</option>
+            <option value="tarjeta_extranjeria">Tarjeta de extranjería</option>
+            <option value="tarjeta_identidad">Tarjeta de identidad</option>
+        </select>
+
+        <label for="ID">Identificación</label>
+        <input type="number" id="ID" name="ID" required>
+
+        <label for="name">Nombre Completo:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">Edad:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="gender">Género:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Seleccione</option>
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+          <option value="otro">Otro</option>
+        </select>
+
+        <div class="button-group">
+          <button type="submit">Registrar</button>
+          <a href="index.html" class="btn-volver">Volver</a>
+      </div>
+      </form>
+      <div id="userData"></div>
+    </section>
+  </main>
+
+  <footer>
+    © 2024 SARCO-TRACK | Todos los derechos reservados
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
